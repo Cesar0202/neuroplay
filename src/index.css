@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --color-canvas: #121212;
+  --color-surface-1: #1E1E1E;
+  --color-surface-2: #252525;
+  --color-surface-3: #2C2C2C;
+  
+  --color-border-subtle: #333333;
+  --color-border-hover: #444444;
+  
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #A1A1AA;
+  --color-text-tertiary: #71717A;
+  
+  /* Retained names for compatibility, but colors are modernized */
+  --color-neon-blue: #6366F1; /* Indigo */
+  --color-neon-purple: #8B5CF6; /* Purple */
+  --color-success: #10B981;
+  --color-warning: #EF4444;
+
+  --font-display: Inter, system-ui, sans-serif;
+  --font-body: Inter, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Consolas', monospace;
+
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+}
+
+/* Global Reset & Base */
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Utility Classes matching system.md */
+
+.glass-panel {
+  background-color: var(--color-surface-1);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: 1rem; /* 16px */
+}
+
+.glass-card {
+  background-color: var(--color-surface-2);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: 0.75rem; /* 12px */
+  transition: all 0.2s ease;
+}
+
+.glass-card:hover {
+  background-color: var(--color-surface-3);
+  border-color: var(--color-border-hover);
+  transform: translateY(-2px);
+}
+
+.text-neon-blue {
+  color: var(--color-neon-blue);
+}
+
+.btn-primary {
+  background: var(--color-neon-blue);
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem; /* 8px for modern look */
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #4F46E5; /* Darker indigo */
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-canvas); 
+}
+::-webkit-scrollbar-thumb {
+  background: #333333; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #444444; 
+}
