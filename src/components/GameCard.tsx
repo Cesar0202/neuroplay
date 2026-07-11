@@ -50,17 +50,27 @@ const GameCard: React.FC<GameCardProps> = ({ id, title, description, difficulty,
         )}
       </div>
 
+      {/* Bottom Gradient for readability */}
+      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-black/80 to-transparent z-10" />
+
       {/* Bottom Left Tag (Difficulty) */}
       <div className={`absolute bottom-0 left-0 px-2 py-0.5 text-[11px] font-bold rounded-tr-lg z-20 ${difficultyColor}`}>
         {difficultyLabel}
       </div>
 
-      {/* Hover Overlay with Title */}
-      <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex flex-col items-center justify-center p-4 text-center">
-        <h3 className="text-xl font-bold text-white mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+      {/* Persistent Title (Bottom Right) */}
+      <div className="absolute bottom-1 right-2 z-20 max-w-[70%]">
+        <h3 className="text-sm font-bold text-white text-right leading-tight drop-shadow-md">
           {title}
         </h3>
-        <p className="text-sm text-gray-300 line-clamp-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+      </div>
+
+      {/* Hover Overlay with Description */}
+      <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-30 flex flex-col items-center justify-center p-4 text-center">
+        <h3 className="text-lg font-bold text-white mb-2 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+          {title}
+        </h3>
+        <p className="text-sm text-gray-300 line-clamp-3 translate-y-2 group-hover:translate-y-0 transition-transform duration-300 delay-75">
           {description}
         </p>
       </div>

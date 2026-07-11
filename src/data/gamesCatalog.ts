@@ -1,6 +1,6 @@
 import { ArrowRight, Zap, Brain, Rocket, Clock, Target, Search, Hash } from 'lucide-react';
 
-import reactionTestImg from '../assets/game_cards/reaction_test.png';
+import reactionTestImg from '../assets/game_cards/reaction_test.png'; 
 import memoryCardsImg from '../assets/game_cards/memory_card.png';
 import typingSpeedImg from '../assets/game_cards/typing_speed.png';
 import catchTheCircleImg from '../assets/game_cards/catch_the_circle.png';
@@ -33,7 +33,7 @@ export const gamesCatalog = [
     {
       id: 'reaction-test',
       category: 'Reflejos',
-      title: 'Reaction Test',
+      title: 'Prueba de Reacción',
       description: 'Mide tus reflejos con cambios de color aleatorios.',
       difficulty: 'Medium' as const,
       icon: Zap,
@@ -43,7 +43,7 @@ export const gamesCatalog = [
     {
       id: 'memory-cards',
       category: 'Memoria',
-      title: 'Memory Cards',
+      title: 'Cartas de Memoria',
       description: 'Entrena tu memoria visual con cartas 3D.',
       difficulty: 'Easy' as const,
       icon: Brain,
@@ -53,7 +53,7 @@ export const gamesCatalog = [
     {
       id: 'typing-speed',
       category: 'Precisión',
-      title: 'Typing Speed',
+      title: 'Velocidad de Escritura',
       description: 'Mejora tu velocidad de escritura bajo presión.',
       difficulty: 'Hard' as const,
       icon: Rocket,
@@ -63,7 +63,7 @@ export const gamesCatalog = [
     {
       id: 'catch-the-circle',
       category: 'Reflejos',
-      title: 'Catch the Circle',
+      title: 'Atrapa el Círculo',
       description: 'Agilidad y precisión en movimiento.',
       difficulty: 'Medium' as const,
       icon: Target,
@@ -73,7 +73,7 @@ export const gamesCatalog = [
     {
       id: 'fast-math',
       category: 'Matemáticas',
-      title: 'Fast Math',
+      title: 'Matemáticas Rápidas',
       description: 'Cálculo mental rápido contra el reloj.',
       difficulty: 'Hard' as const,
       icon: Hash,
@@ -83,7 +83,7 @@ export const gamesCatalog = [
     {
       id: 'find-the-different',
       category: 'Lógica',
-      title: 'Find the Different',
+      title: 'Encuentra el Diferente',
       description: 'Agudeza visual para encontrar el intruso.',
       difficulty: 'Easy' as const,
       icon: Search,
@@ -93,7 +93,7 @@ export const gamesCatalog = [
     {
       id: 'simon-says',
       category: 'Memoria',
-      title: 'Simon Says',
+      title: 'Simón Dice',
       description: 'Repite la secuencia de colores que crece progresivamente.',
       difficulty: 'Medium' as const,
       icon: Zap,
@@ -103,7 +103,7 @@ export const gamesCatalog = [
     {
       id: 'dodge-obstacles',
       category: 'Reflejos',
-      title: 'Dodge Blocks',
+      title: 'Esquiva Bloques',
       description: 'Mueve el cuadrado y evita chocar con los bloques rojos.',
       difficulty: 'Hard' as const,
       icon: Rocket,
@@ -113,7 +113,7 @@ export const gamesCatalog = [
     {
       id: 'exact-time',
       category: 'Precisión',
-      title: 'Exact Time',
+      title: 'Tiempo Exacto',
       description: 'Detén el cronómetro exactamente en 10.00 segundos.',
       difficulty: 'Medium' as const,
       icon: Clock,
@@ -123,7 +123,7 @@ export const gamesCatalog = [
     {
       id: 'left-or-right',
       category: 'Reflejos',
-      title: 'Left or Right',
+      title: 'Izquierda o Derecha',
       description: 'Reacciona rápido: pulsa la dirección correcta.',
       difficulty: 'Easy' as const,
       icon: ArrowRight,
@@ -133,7 +133,7 @@ export const gamesCatalog = [
     {
       id: 'find-largest-number',
       category: 'Matemáticas',
-      title: 'Find Max',
+      title: 'Encuentra el Mayor',
       description: 'Encuentra el número más grande entre todos.',
       difficulty: 'Easy' as const,
       icon: Hash,
@@ -143,7 +143,7 @@ export const gamesCatalog = [
     {
       id: 'order-numbers',
       category: 'Matemáticas',
-      title: 'Order Numbers',
+      title: 'Ordenar Números',
       description: 'Ordena los números de menor a mayor correctamente.',
       difficulty: 'Medium' as const,
       icon: Hash,
@@ -153,7 +153,7 @@ export const gamesCatalog = [
     {
       id: 'human-timer',
       category: 'Precisión',
-      title: 'Human Timer',
+      title: 'Cronómetro Humano',
       description: 'Calcula mentalmente cuándo pasa 1 minuto exacto.',
       difficulty: 'Hard' as const,
       icon: Clock,
@@ -163,7 +163,7 @@ export const gamesCatalog = [
     {
       id: 'safe-path',
       category: 'Precisión',
-      title: 'Safe Path',
+      title: 'Camino Seguro',
       description: 'Lleva el cursor a la meta sin tocar las paredes.',
       difficulty: 'Hard' as const,
       icon: Target,
@@ -173,7 +173,7 @@ export const gamesCatalog = [
     {
       id: 'hidden-pattern',
       category: 'Lógica',
-      title: 'Hidden Pattern',
+      title: 'Patrón Oculto',
       description: 'Descubre la regla y completa la secuencia.',
       difficulty: 'Hard' as const,
       icon: Search,
@@ -183,7 +183,7 @@ export const gamesCatalog = [
     {
       id: 'find-intruder',
       category: 'Lógica',
-      title: 'Find Intruder',
+      title: 'Encuentra el Intruso',
       description: 'Elige el elemento que no pertenece al grupo.',
       difficulty: 'Easy' as const,
       icon: Search,
@@ -193,7 +193,7 @@ export const gamesCatalog = [
     {
       id: 'number-sequence',
       category: 'Matemáticas',
-      title: 'Number Seq',
+      title: 'Secuencia Numérica',
       description: 'Predice el siguiente número de la serie.',
       difficulty: 'Hard' as const,
       icon: Hash,
@@ -203,7 +203,7 @@ export const gamesCatalog = [
     {
       id: 'dynamic-maze',
       category: 'Lógica',
-      title: 'Dynamic Maze',
+      title: 'Laberinto Dinámico',
       description: 'Escapa de un laberinto que cambia constantemente.',
       difficulty: 'Hard' as const,
       icon: Brain,
@@ -213,7 +213,7 @@ export const gamesCatalog = [
     {
       id: 'human-semaphore',
       category: 'Reflejos',
-      title: 'Semaphore',
+      title: 'Semáforo',
       description: 'Reacciona instantáneamente cuando veas el verde.',
       difficulty: 'Medium' as const,
       icon: Zap,
@@ -223,7 +223,7 @@ export const gamesCatalog = [
     {
       id: 'visual-explosion',
       category: 'Reflejos',
-      title: 'Visual Explosion',
+      title: 'Explosión Visual',
       description: 'Haz clic antes de que los objetos desaparezcan.',
       difficulty: 'Medium' as const,
       icon: Target,
@@ -233,7 +233,7 @@ export const gamesCatalog = [
     {
       id: 'safe-zone',
       category: 'Precisión',
-      title: 'Safe Zone',
+      title: 'Zona Segura',
       description: 'Muévete solo cuando la zona esté verde.',
       difficulty: 'Hard' as const,
       icon: Brain,
@@ -243,7 +243,7 @@ export const gamesCatalog = [
     {
       id: 'double-stimulus',
       category: 'Reflejos',
-      title: 'Double Stimulus',
+      title: 'Estímulo Doble',
       description: 'Reacciona solo si coinciden color y forma.',
       difficulty: 'Hard' as const,
       icon: Zap,
@@ -253,7 +253,7 @@ export const gamesCatalog = [
     {
       id: 'draw-line',
       category: 'Precisión',
-      title: 'Draw Line',
+      title: 'Traza la Línea',
       description: 'Traza un camino sin salirte de los bordes.',
       difficulty: 'Hard' as const,
       icon: Target,
@@ -263,7 +263,7 @@ export const gamesCatalog = [
     {
       id: 'steady-pulse',
       category: 'Precisión',
-      title: 'Steady Pulse',
+      title: 'Pulso Firme',
       description: 'Mantén el cursor dentro de la zona móvil.',
       difficulty: 'Hard' as const,
       icon: Target,
@@ -273,7 +273,7 @@ export const gamesCatalog = [
     {
       id: 'parabolic-shot',
       category: 'Precisión',
-      title: 'Parabolic Shot',
+      title: 'Tiro Parabólico',
       description: 'Ajusta ángulo y fuerza para acertar al blanco.',
       difficulty: 'Medium' as const,
       icon: Rocket,
@@ -283,7 +283,7 @@ export const gamesCatalog = [
     {
       id: 'orbital-control',
       category: 'Precisión',
-      title: 'Orbital Control',
+      title: 'Control Orbital',
       description: 'Mantén un objeto girando en órbita estable.',
       difficulty: 'Hard' as const,
       icon: Brain,
@@ -293,7 +293,7 @@ export const gamesCatalog = [
     {
       id: 'flash-memory',
       category: 'Memoria',
-      title: 'Flash Memory',
+      title: 'Memoria Flash',
       description: 'Recuerda la posición exacta del patrón.',
       difficulty: 'Hard' as const,
       icon: Brain,
@@ -303,7 +303,7 @@ export const gamesCatalog = [
     {
       id: 'build-tower',
       category: 'Precisión',
-      title: 'Build Tower',
+      title: 'Construye la Torre',
       description: 'Apila bloques sin que se caigan.',
       difficulty: 'Hard' as const,
       icon: Hash,
