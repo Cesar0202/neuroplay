@@ -50,19 +50,21 @@ const GameCard: React.FC<GameCardProps> = ({ id, title, description, difficulty,
         )}
       </div>
 
-      {/* Bottom Gradient for readability */}
-      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-black/80 to-transparent z-10" />
+      {/* Bottom Gradient for extra readability */}
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10 pointer-events-none" />
 
       {/* Bottom Left Tag (Difficulty) */}
-      <div className={`absolute bottom-0 left-0 px-2 py-0.5 text-[11px] font-bold rounded-tr-lg z-20 ${difficultyColor}`}>
+      <div className={`absolute bottom-3 left-3 px-2 py-1 text-[11px] font-bold rounded z-20 shadow-lg ${difficultyColor}`}>
         {difficultyLabel}
       </div>
 
       {/* Persistent Title (Bottom Right) */}
-      <div className="absolute bottom-1 right-2 z-20 max-w-[70%]">
-        <h3 className="text-sm font-bold text-white text-right leading-tight drop-shadow-md">
-          {title}
-        </h3>
+      <div className="absolute bottom-3 right-3 z-20 max-w-[70%]">
+        <div className="bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 shadow-xl">
+          <h3 className="text-[15px] font-bold text-white text-right leading-tight tracking-wide">
+            {title}
+          </h3>
+        </div>
       </div>
 
       {/* Hover Overlay with Description */}
